@@ -56,9 +56,19 @@ const App = () => {
 			cambiarUsuario({ campo: '', valido: '' });
 			cambiarNombre({ campo: '', valido: null });
 			cambiarPassword({ campo: '', valido: null });
-			cambiarPassword2({ campo: '', valido: 'null' });
+			cambiarPassword2({ campo: '', valido: null });
 			cambiarCorreo({ campo: '', valido: null });
 			cambiarTelefono({ campo: '', valido: null });
+			cambiarTerminos(false);
+
+			console.log({
+				"usuario":usuario.campo,
+				"nombre":nombre.campo,
+				"password":password.campo,
+				"correo":correo.campo,
+				"telefono":telefono.campo,
+				"terminos":terminos.campo
+			})
 
 			// ... 
 		} else {
